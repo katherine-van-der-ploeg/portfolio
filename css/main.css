@@ -108,16 +108,32 @@ ul {
 }
 
 .logo {
-  text-align: left;
+  margin: auto;
+  padding: 2em;
+}
+
+.nav-buttons {
+  text-align: center;
+  padding: 1em;
 }
 
 .contact-me-info {
   padding: 1em;
 }
 
+
 @media only screen and (min-width: 38em) {
+
+  .logo-img {
+    width: 50%;
+  }
+
 }
 @media only screen and (min-width: 60em) {
+
+  .nav-buttons {
+    text-align: right;
+  }
 }
 @media only screen and (min-width: 90em) {
 }
