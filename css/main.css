@@ -114,13 +114,38 @@ ul {
 
 .nav-buttons {
   text-align: center;
-  padding: 1em;
+  padding: 0.25em;
 }
 
 .contact-me-info {
   padding: 1em;
 }
 
+.linkedin {
+  width: 2.5em;
+}
+
+.behance {
+  width: 2.5em;
+}
+
+.instagram {
+  width: 2.5em;
+}
+
+footer {
+  padding: 1em;
+}
+
+.footer-text{
+  padding: 0.5em;
+  padding-left: 1.25em;
+}
+
+.social-media-icons {
+  padding-top: 0.75em;
+  padding-left: 1.25em;
+}
 
 @media only screen and (min-width: 38em) {
 
@@ -128,12 +153,13 @@ ul {
     width: 50%;
   }
 
-}
-@media only screen and (min-width: 60em) {
-
   .nav-buttons {
     text-align: right;
+    padding-top: 1.5em;
   }
+
+}
+@media only screen and (min-width: 60em) {
 }
 @media only screen and (min-width: 90em) {
 }
