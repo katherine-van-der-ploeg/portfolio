@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <title>Home</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="../css/modules.css" rel="stylesheet">
-  <link href="../css/grids.css" rel="stylesheet">
-  <link href="../css/type.css" rel="stylesheet">
-  <link href="../css/main.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/modules.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/grids.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/type.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:300,500,700" rel="stylesheet">
 </head>
 <body>
@@ -18,14 +18,14 @@
         <img class="logo-img img-flex" src="../images/wordmark.jpg" alt="#">
       </div>
       <ul class="nav-buttons unit xs-1 s-1 m-1-2 l-1-2 list-group-inline">
-        <li class="island-half block text-center"><a href="#">ABOUT</a></li>
-        <li class="island-half block text-center"><a href="work.html">WORK</a></li>
-        <li class="island-half block text-center"><a href="contact-me.html">CONTACT ME</a></li>
+        <li class="island-half block text-center"><a href="{{site.baseurl/about/}}">ABOUT</a></li>
+        <li class="island-half block text-center"><a href="{{site.baseurl/index/}}">WORK</a></li>
+        <li class="island-half block text-center"><a href="{{site.baseurl/contact/}}">CONTACT ME</a></li>
       </ul>
     </nav>
   </header>
 
-{{content}}
+  {{content}}
 
   <footer>
     <div class="grid">

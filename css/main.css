@@ -22,22 +22,6 @@ ul {
   text-decoration: none;
 }
 
-.red-stripe {
-  display: inline-block;
-}
-
-.blue-stripe {
-  display: inline-block;
-}
-
-.yellow-stripe {
-  display: inline-block;
-}
-
-.black-stripe {
-  display: inline-block;
-}
-
 .name {
   text-align: center;
   font-family: 'Raleway',sans-serif;
@@ -48,63 +32,9 @@ ul {
   color: #fff;
 }
 
-.banner {
-  position: relative;
-}
-
-.name-1 {
-  font-size: 36pt;
-}
-.name-2 {
-  font-size: 36pt;
-}
-
-.subtext {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: #fff;
-}
-
 .social-media-icons {
   padding-left: 0.5em;
   padding-top: 0.25em
-}
-
-.illustration-title {
-  position: absolute;
-  bottom: 50%;
-  color: #fff;
-  list-style-type: none;
-  padding-left: 1em;
-  transform: rotate(90deg);
-}
-
-.typography-title {
-  position: absolute;
-  bottom: 50%;
-  list-style-type: none;
-  color: #fff;
-  padding-left: 1em;
-  transform: rotate(90deg);
-}
-
-.ux-title {
-  position: absolute;
-  bottom: 50%;
-  list-style-type: none;
-  color: #fff;
-  padding-left: 1em;
-  transform: rotate(90deg);
-}
-
-.motion-title {
-  position: absolute;
-  bottom: 50%;
-  list-style-type: none;
-  color: #fff;
-  padding-left: 1em;
-  transform: rotate(90deg);
 }
 
 .logo {
@@ -117,20 +47,16 @@ ul {
   padding: 0.25em;
 }
 
-.contact-me-info {
-  padding: 1em;
-}
-
 .linkedin {
-  width: 2.5em;
+  width: 2em;
 }
 
 .behance {
-  width: 2.5em;
+  width: 2em;
 }
 
 .instagram {
-  width: 2.5em;
+  width: 2em;
 }
 
 footer {
@@ -145,6 +71,42 @@ footer {
 .social-media-icons {
   padding-top: 0.75em;
   padding-left: 1.25em;
+}
+
+div {
+  margin: 0;
+}
+
+.crop-button {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 1em;
+}
+
+.crop {
+  width: 500px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.crop-image {
+  width: 800px;
+  height: 800px;
+  margin: -75px 0 0 -100px;
+}
+
+.crop-title {
+  color: #fff;
+  font-size: 24pt;
+  padding-left: .5em;
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  bottom: 0%;
+}
+
+.crop-button-overlay {
+position: absolute;
 }
 
 @media only screen and (min-width: 38em) {
