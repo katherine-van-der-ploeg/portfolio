@@ -78,7 +78,7 @@ div {
 }
 
 .crop-button {
-  display: block;
+  display: inline-block;
   width: 100%;
   position: relative;
   padding: 1em;
@@ -118,6 +118,23 @@ position: absolute;
   .nav-buttons {
     text-align: right;
     padding-top: 1.5em;
+  }
+
+  .crop {
+    width: 200px;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .crop-image {
+    width: 800px;
+    height: 800px;
+    margin: -75px 0 0 -100px;
+  }
+
+  .crop-title {
+    transform: rotate(90deg);
+    bottom: 15%;
   }
 
 }
