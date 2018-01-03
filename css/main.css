@@ -1,9 +1,6 @@
-html {
-  font-family: 'aktiv-grotesk', sans-serif;
-  margin: 0;
-}
-
+html,
 body {
+  font-family: 'aktiv-grotesk', sans-serif;
   margin: 0;
 }
 
@@ -17,53 +14,39 @@ nav {
   text-align: right;
 }
 
-ul {
-  text-decoration: none;
-}
-
 small {
   display: block;
-}
-
-.name {
-  text-align: center;
-  font-family: 'aktiv-grotesk',sans-serif;
-  font-weight: bold;
-  position: absolute;
-  bottom: 30%;
-  left: 0;
-  color: #fff;
-}
-
-.social-media-icons {
-  padding-left: 0.5em;
-  padding-top: 0.25em
+  text-align: left;
 }
 
 .logo {
-  margin: auto;
-  padding: 2em;
+  padding: 1.25em;
 }
 
 .nav-buttons {
   text-align: center;
-  padding: 0.25em;
+  padding: 3em;
 }
 
-.linkedin {
-  width: 2em;
+.nav-link {
+  padding-top: 0em;
 }
 
-.behance {
-  width: 2em;
-}
-
-.instagram {
-  width: 2em;
+.nav-link:hover {
+  background: rgba(240, 82, 93, 100);
+  color: #fff;
 }
 
 footer {
   padding: 1em;
+}
+
+.social-media-icons {
+  padding-left: 0.5em;
+}
+
+.social-media-link {
+  width: 2em;
 }
 
 .footer-text{
@@ -76,36 +59,50 @@ footer {
   padding-left: 1.25em;
 }
 
-.crop-button {
-  display: inline-block;
-  width: 100%;
-  position: relative;
+.img-button-title {
+  text-align: center;
+  font-family: 'aktiv-grotesk',sans-serif;
+  font-weight: bold;
+  position: absolute;
+  bottom: 30%;
+  left: 0;
+  color: #fff;
   padding: 1em;
 }
 
-.crop {
-  width: 500px;
-  height: 100px;
-  overflow: hidden;
+.img-button {
+  padding: 1em;
 }
 
-.crop-image {
-  width: 800px;
-  height: 800px;
-  margin: -75px 0 0 -100px;
+.bg-image {
+  height: 300px;
+  width: 100%;
+  display: block;
+  position: relative;
 }
 
-.crop-title {
-  color: #fff;
-  font-size: 24pt;
-  padding-left: .5em;
-  font-family: 'Raleway', sans-serif;
-  position: absolute;
-  bottom: 0%;
+.bg-illustration {
+  background-image: url("../images/illustration-1.png");
+  background-size: cover;
 }
 
-.crop-button-overlay {
-position: absolute;
+.bg-motion {
+  background-image: url("../images/motion-1.png");
+  background-size: cover;
+}
+
+.bg-typography {
+  background-image: url("../images/typography-1.png");
+  background-size: cover;
+}
+
+.bg-ux {
+  background-image: url("../images/ux-1.png");
+  background-size: cover;
+}
+
+.carousel-padding {
+  padding-left: 1em;
 }
 
 .carousel-items > div {
@@ -140,11 +137,10 @@ position: absolute;
 }
 
 .carousel-control {
-    background: rgba(0, 0, 0, 0.28);
+    background: rgba(0, 181, 203, 100);
     border-radius: 50%;
     color: #fff;
     cursor: pointer;
-    display: none;
     font-size: 40px;
     height: 40px;
     line-height: 35px;
@@ -168,8 +164,8 @@ position: absolute;
 }
 
 .carousel-control:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: #aaaaaa;
+    background: rgba(240, 82, 93, 100);
+    color: #fff;
 }
 
 #carousel-1:checked ~ .control-1,
@@ -178,82 +174,18 @@ position: absolute;
     display: block;
 }
 
-.carousel-indicators {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 2%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 10;
-}
-
-.carousel-indicators li {
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.carousel-bullet {
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    font-size: 35px;
-}
-
-.carousel-bullet:hover {
-    color: #aaaaaa;
-}
-
-#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-    color: #428bca;
-}
-
-#title {
-    width: 100%;
-    position: absolute;
-    padding: 0px;
-    margin: 0px auto;
-    text-align: center;
-    font-size: 27px;
-    color: rgba(255, 255, 255, 1);
-    font-family: 'Open Sans', sans-serif;
-    z-index: 9999;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
-}
 @media only screen and (min-width: 38em) {
 
   .logo-img {
-    width: 50%;
+    width: 80%;
   }
 
   .nav-buttons {
     text-align: right;
-    padding-top: 1.5em;
   }
 
-  .crop {
-    width: 200px;
-    height: 500px;
-    overflow: hidden;
+  .nav-link {
+    padding-top: 1em;
   }
 
-  .crop-image {
-    width: 800px;
-    height: 800px;
-    margin: -75px 0 0 -100px;
-  }
-
-  .crop-title {
-    transform: rotate(90deg);
-    bottom: 15%;
-  }
-
-}
-@media only screen and (min-width: 60em) {
-}
-@media only screen and (min-width: 90em) {
 }
