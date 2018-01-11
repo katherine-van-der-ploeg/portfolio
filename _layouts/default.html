@@ -4,39 +4,36 @@
   <meta charset="utf-8">
   <title>Home</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="{{site.baseurl}}/css/modules.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/css/grids.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/css/type.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:300,500,700" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/site.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="{{site.baseurl}}/images/favicon.png">
 </head>
 <body>
 
   <header>
     <nav class="grid">
       <div class="logo unit xs-1 s-1 m-1-3 l-1-3">
-        <img class="logo-img img-flex" src="../images/wordmark.jpg" alt="#">
+        <img class="logo-img img-flex" itemprop="image" src="../images/wordmark.jpg" alt="#">
       </div>
       <ul class="nav-buttons unit xs-1 s-1 m-2-3 l-2-3 list-group-inline">
-        <li class="island-half block text-center nav-link"><a href="{{site.baseurl}}/about/">ABOUT</a></li>
-        <li class="island-half block text-center nav-link"><a href="{{site.baseurl}}/index/">WORK</a></li>
-        <li class="island-half block text-center nav-link"><a href="{{site.baseurl}}/contact/">CONTACT ME</a></li>
+        <li class="island-half block text-center nav-link"><a href="{{site.baseurl}}/index/" itemprop="url">WORK</a></li>
+        <li class="island-half block text-center nav-link"><a href="{{site.baseurl}}/about/" itemprop="url">ABOUT</a></li>
+        <li class="island-half block text-center nav-link"><a href="{{site.baseurl}}/contact/" itemprop="url">CONTACT ME</a></li>
       </ul>
     </nav>
   </header>
 
   {{content}}
 
-  <footer>
+  <footer id="data-author" itemprop="author" itemscope itemtype="https://katherinevanderploeg.ca/katherinevanderploeg">
     <div class="grid">
       <div class="social-media-icons unit xs-1 s-1 m-1-2 l-1-2">
-        <a href=""><img class="social-media-link ib" src="../images/behance-icon.jpg" alt="#"></a>
+        <a href="https://www.behance.net/VAND04657e8d"><img class="social-media-link ib" src="../images/behance-icon.jpg" alt="#"></a>
         <a href="https://www.linkedin.com/in/katherine-van-der-ploeg-b5a942139/"><img class="social-media-link ib" src="../images/likedin-icon.jpg" alt="#"></a>
         <a href="https://www.instagram.com/katherine_vanderploeg_designs/?hl=en"><img class="social-media-link ib" src="../images/instagram-icon.jpg" alt="#"></a>
       </div>
       <div class="footer-text unit xs-1 s-1 m-1-2 l-1-2">
-        <small>© 2017 KATHERINE VAN DER PLOEG</small>
-        <small>all rights reserved • privacy policy • terms of use</small>
+        <small class="micro" itemprop="name">© 2017 KATHERINE VAN DER PLOEG</small>
+        <small class="micro">all rights reserved • privacy policy • terms of use</small>
       </div>
     </div>
   </footer>

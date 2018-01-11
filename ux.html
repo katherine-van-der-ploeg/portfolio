@@ -2,34 +2,37 @@
 layout: default
 ---
 
-<div class="grid">
+<body>
+  <div class="grid island" itemscope itemtype="https://katherinevanderploeg.ca/ux">
+    <div class="unit xs-1 s-1 m-1-2 l-1-2 pad-t">
+      <div class="carousel">
+        <div class="carousel-inner">
+          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+          <div class="carousel-item">
+            <img itemprop="image" src="../images/ux-1.jpg">
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item">
+            <img itemprop="image" src="../images/ux-2.gif">
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item">
+            <img itemprop="image" src="../images/ux-3.png">
+          </div>
+          <label for="carousel-2" class="carousel-control next control-1">›</label>
+          <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+          <label for="carousel-2" class="carousel-control prev control-1">‹</label>
+          <label for="carousel-1" class="carousel-control next control-2">›</label>
+        </div>
+      </div>
+    </div>
 
-  <div class="carousel unit xs-1 s-1 m-1-2 l-1-2">
-    <div class="carousel-inner">
-      <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-      <div class="carousel-item">
-        <img src="../images/ux-1.png">
+    <div class="unit xs-1 s-1 m-1-2 l-1-2">
+      <div class="text island">
+        <h1 itemprop="name">UX/UI</h1>
+        <p class="body" itemprop="description">Ux/Ui design is so fucking cool. Being able to go through and prototype something that could potentially make a difference in the way someone lives their life is a whole other level of design.
+User experience goes so far beyond applications, its designing in virtual, three dimensional space, its advertising, touch screen interfaces, voice control, and so much more. I will always look forward to extending my personal projects beyond the one dimensional design, and try to make something that extends into a usable interface.</p>
       </div>
-      <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-      <div class="carousel-item">
-        <img src="../images/interaction-1.gif">
-      </div>
-      <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-      <div class="carousel-item">
-        <img src="../images/ux-3.png">
-      </div>
-      <label for="carousel-3" class="carousel-control prev control-1">‹</label>
-      <label for="carousel-2" class="carousel-control next control-1">›</label>
-      <label for="carousel-1" class="carousel-control prev control-2">‹</label>
-      <label for="carousel-3" class="carousel-control next control-2">›</label>
-      <label for="carousel-2" class="carousel-control prev control-3">‹</label>
-      <label for="carousel-1" class="carousel-control next control-3">›</label>
     </div>
   </div>
-
-  <div class="unit xs-1 s-1 m-1-2 l-1-2">
-    <div class="text island">
-      <h1>UX/UI</h1>
-      <p>This shit is the future. There are endless apptications for interaction and user centered design. MY goal in life is to master and stretch the boudaries of what user interface design can truely be. I cannot wait to see where the user interface design movement can take us as humans and I can't wait to be a part of it.</p>
-    </div>
-  </div>
+</body>
